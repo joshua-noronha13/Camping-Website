@@ -1,0 +1,41 @@
+<% include ./partials/header %>
+	</head>
+    <body>
+    <% include ./partials/navbar %>
+    <style>
+        #main{
+            background-color:#111;
+        }
+    </style> 
+
+	<form method="post" action="/register/organiser" >
+	  <div style="width: 30%; margin: 25px auto;">
+	  <h1>Welcome!</h1>
+	  <div>
+	    <p>Email id :</p><input type="text" name="username" placeholder="username" class="new" required>
+    </div>
+    <div>
+	    <p>Password :</p><input type="password" name="password" placeholder="password" class="new" required>
+    </div>
+    <div>
+	    <p>Email id :</p><input type="email" name="email" placeholder="email" class="new" required>
+    </div>
+    <div>
+	    <p>Phone No :</p><input type="number" name="phone" placeholder="Phone No" class="new" required>
+    </div>
+    <div>
+	    <p>Licence No :</p><input type="text" name="licence" placeholder="licence" class="new" required>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LcUEDYUAAAAAA4VkOVnwdJtMJ0uxWBfnfgrPhnq"></div>
+    <div>
+      <button class="btn btn-default">Submit</button>
+    </div>
+    </div>
+   
+      
+	</form>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous">
+    </script>
+<% include ./partials/footer %>

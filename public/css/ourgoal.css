@@ -1,0 +1,29 @@
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 16px;
+    font-size: 17px;
+    width: 33.3%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Motto {background-color:#150a93;}
+#Goal {background-color:green;}
+#Whyus {background-color:orange;}

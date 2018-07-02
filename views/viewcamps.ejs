@@ -1,0 +1,241 @@
+<%- include ./partials/header %> 
+	<link rel="stylesheet" type="text/css" href="css/viewcamps.css">
+</head>
+<body>
+
+<style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        
+        
+        
+        
+        
+        .img-responsive2
+        {
+          height: 25px;
+          width: 30px;
+        }
+        
+        
+        .caption {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          color: #000;
+        }
+        
+        .caption span.border {
+          background-color: #111;
+          color: #fff;
+          padding: 18px;
+          font-size: 25px;
+          letter-spacing: 10px;
+        }
+        p.border
+        {
+          
+          color: white;
+          font-family: sans-serif;
+          font-style: italic;
+          padding: 10px;
+          font-size: 30px;
+          letter-spacing: 2px;
+        }
+        
+        h3 {
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          font: 20px "Lato", sans-serif;
+          color: #111;
+        }
+        
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        
+        .about_us_button
+        {
+            position: absolute;
+            margin: auto;
+            height:150px; 
+            width":35px    
+        }       
+        
+        </style>
+        
+        <div>
+        <div class="bgimg-1">
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/">Home <i class="fa fa-home" style="font-size:36px"></i></a>
+          <a href="/login">Login <i class="fa fa-user-circle" style="font-size:36px"></i></i></a>
+          <a href="/viewcamps">View Camps <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></a>
+          <a href="/aboutus">About us <i class="fa fa-users" style="font-size:36px"></i></a>
+         
+        </div>
+        
+        <div id="main">
+         
+          
+          <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; MENU</span>
+        </div>
+
+
+
+<div class="container" id="content">
+	<h1 style="text-align:center;color:white">View Camps</h1>
+
+<!--<div class="row">-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Khandala Camps</b></h4> -->
+<!--   	<p>Only the best</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Bordi Trek</b></h4> -->
+<!--   	<p>Do you have what it takes?</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Star Camps</b></h4> -->
+<!--   	<p>Best camps in Pune</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Pugmarks Holidays</b></h4> -->
+<!--   	<p>Change is coming....</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Camp Evergreen</b></h4> -->
+<!--   	<p>Escape into the wilderness</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Summer Camps</b></h4> -->
+<!--   	<p>Weekend Getaway</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>ICTF Camps</b></h4> -->
+<!--   	<p>Leave the city life behind</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--  <div class="col-sm-6 col-lg-3 card">-->
+<!--    <img src="img/camp2.jpg" style="width:100%" class="cursor">-->
+<!--    <div class="container">-->
+<!--    <h4><b>Escape Treks</b></h4> -->
+<!--   	<p>The best in town</p> -->
+<!-- 	</div>-->
+<!--  </div>-->
+<!--</div>-->
+<form method="get" action="/viewcamps">
+  <select class="form-control width">
+    <option>Available</option>
+    <option>Sold Out</option>
+  </select>
+  <select class="form-control width">
+    <option>Mumbai</option>
+  </select>
+  <select class="form-control width">
+    <option>New</option>
+    <option>Best Rated</option>
+    <option>Most Popular</option>
+  </select>
+  <select class="form-control width">
+    <option>Price - Low to High</option>
+    <option>Price - High to Low</option>
+  </select>
+  <button class="btn btn-default" id="button-width">Submit</button>
+</form>
+  <br>
+  <br>
+  <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-3 col-sm-6 card">
+                  <div class="thumbnail">
+                    <img src="<%= campground.image %>" style="width:100%" class="cursor">
+                   
+                  <div class="caption" id="width">
+                      <h4> <%= campground.name %> </h4>
+                  </div>
+                  </div>
+                  <div>
+                  <p>
+                      <a href="/campgrounds/<%=campground._id%>" class="btn btn-primary">More info</a>    
+                  </p>
+                  </div>
+            </div>
+        <% }); %>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<%- include ./partials/footer %> 

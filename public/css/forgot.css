@@ -1,0 +1,24 @@
+body{
+color: white;
+background-image: url("../img/back.jpg")
+}
+#form{
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+#input{
+    color:black;
+}
+h2{
+    text-align: center;
+}
+input{
+    float:right;
+    margin-left: 200px;
+}
+p{
+    float:left;   
+}

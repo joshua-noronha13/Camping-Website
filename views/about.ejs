@@ -1,0 +1,101 @@
+<% include ./partials/header %> 
+<title>ABOUT US</title>
+<link rel="stylesheet" type="text/css" href="css/contactchips.css">
+<link rel="stylesheet" type="text/css" href="css/ourgoal.css">
+</head>
+<body>
+  <% include ./partials/navbar %> 
+
+        <style>
+          #main{
+            background: #111;
+          }
+        </style>
+<div id="Motto" class="tabcontent">
+  <h3>Our Motto</h3>
+  <p>"FIND YOURSELF"</p>
+  <br>
+</div>
+
+<div id="Goal" class="tabcontent">
+  <h3>Our Goals</h3>
+  <p>We aim to connect the camping entusiasts with the right camp orgaizers around them.We provide a plethora of options to ensure that the cutomer find the best camps of their choice.</p> 
+</div>
+
+<div id="Whyus" class="tabcontent">
+  <h3>Why us?</h3>
+  <p>Our main objective is to help you find yourself.You must lose yourself first to find yourself.Here we give you a chance to connect with the finest camp organizers in the city to discover more about yourself and make this life of yours more worth living.</p>
+</div>
+
+
+<button class="tablink" onclick="openCity('Motto', this, '#150a93')" >Motto</button>
+<button class="tablink" onclick="openCity('Goal', this, 'green')" id="defaultOpen">Goal</button>
+<button class="tablink" onclick="openCity('Whyus', this, 'orange')">Why us?</button>
+
+
+
+
+
+
+<div class="row">
+
+  <div class="column c1">
+    <div class="card gopesh">
+      <img src="img/gopesh.jpg" style="width:100%;height: 400px">
+      <div class="container">
+        <h2>Gopesh Rajderkar</h2>
+        <p class="title">Website Developer</p>
+        <p>Third Year Computer Engineering student</p>  
+        <p>Father Conceciao Rodrigues College of Engineering</p>
+        <p>Contact:-</p>
+        <br>
+        <p>gopesh2210@gmail.com</p>
+       
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column c2">
+    <div class="card josh">
+      <img src="img/josh.jpg"  style="width:100%;height: 400px">
+      <div class="container">
+        <h2>Joshua Noronha</h2>
+        <p class="title">Website Developer</p>
+        <p>Third Year Computer Engineering student</p>
+        <p>Father Conceciao Rodrigues College of Engineering</p>
+        <p>Contact:-</p>
+        <br>
+        <p>ruttajosh@gmail.com</p>
+        
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+</script>
+     
+<% include ./partials/footer %>

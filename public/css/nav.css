@@ -1,0 +1,11 @@
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+   
+    color: black;
+    background-color: #26a815;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9D9DA2;
+    padding-right: 25px;
+}

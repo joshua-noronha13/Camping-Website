@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" >
+    </head>
+    <body>
+    <% include ./partials/navbar %>
+    <style>
+        #main{
+            background-color:#111;
+        }
+    </style>
+
+        <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                        <h2>Forgot Password?</h2>
+                            <form method="post" action="/forgot">
+                            <div class="form-group">
+                                Enter your Email Address :<input type="email" id="input" placeholder="email id" required>    
+                            </div>
+                            <button class="btn btn-primary ">Submit</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+<% include ./partials/footer %>

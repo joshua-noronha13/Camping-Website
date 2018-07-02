@@ -1,0 +1,36 @@
+<%- include ./partials/header %> 
+</head>
+    <body>
+    <% include ./partials/navbar %>
+    <style>
+        #main{
+            background-color:#111;
+        }
+    </style>
+	<form method="post" action="/campgrounds">
+
+	  <div style="width:450px; margin-left:auto; margin-right:auto;">
+	      	  <h1>Upload Camp</h1>
+	              <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Camp Name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="Image URL" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="desc" placeholder="Camp Description" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="start" placeholder="Start Date" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="end" placeholder="End Date" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="loc" placeholder="Location (eg. 5km from Mumbai)" required>
+                </div>
+        
+      <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+	</form>
+<%- include ./partials/footer %> 

@@ -1,0 +1,45 @@
+body{
+    background-image: url("../img/back.jpg");
+}
+.width{
+    width:20%;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#width{
+    width:80%;
+}
+.thumbnail .caption {
+    top:80%;
+    text-align: right;
+}
+h4{
+    text-align: left;
+    width: 100%;
+}
+.btn{
+    float: right;
+    margin-bottom: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.45);
+}
+
+.container {
+	width: 95%;
+	align-content: center;
+}
+
+#button-width{
+    width:10%;
+    display: inline;
+}

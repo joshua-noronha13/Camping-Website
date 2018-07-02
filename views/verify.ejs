@@ -1,0 +1,16 @@
+<% include ./partials/header %> 
+</head>
+<body>
+  <% include ./partials/navbar %>
+  <style>
+        #main{
+            background-color:#111;
+        }
+    </style>
+<form action="/verify" method="post"><input name="pin" required="" type="number" placeholder="4 digit no" />
+  <input name="phone" type="hidden" value="<%=phone%>" />
+  <input name="newUser" type="hidden" value="<%=newUser%>" />
+  <input name="requestId" type="hidden" value="<%=requestId%>" />
+  <input type="submit" value="Verify PIN" />
+</form>
+<% include ./partials/footer %>

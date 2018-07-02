@@ -1,0 +1,84 @@
+<% include ./partials/header %> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/campsdetails.css">
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="lcamp1.jpg" style="width:100%;height: 600px;">
+  <div class="text">Taste the beauty of nature</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="lcamp2.jpg" style="width:100%;height: 600px;">
+  <div class="text">Exciting water sports</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="lcamp3.jpg" style="width:100%;height: 600px;">
+  <div class="text">Stunning views</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Hapiness_Overload Camp <i class="fa fa-heartbeat" style="font-size:32px;color:red"></i></li>
+    <li class="grey">Rs.3,600 only</li>
+    <li>"20%" early bird Discount</li>
+    <li>Time: 2 nights 4 days</li>
+    <li>Venue: Khandala</li>
+    <li>Distance from Mumbai: 104 kms</li>
+    <li class="grey"><a href="payment.html" class="button">BOOK NOW</a></li>
+  </ul>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<% include ./partials/footer %>
